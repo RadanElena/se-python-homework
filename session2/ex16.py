@@ -6,3 +6,5 @@
         Veti primi: 'cmi'
         Veti printa: 'cmicmicmi'
 """
+x = input("Introduceti un cuvant: ")
+print(x*3)
