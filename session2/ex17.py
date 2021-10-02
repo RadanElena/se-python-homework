@@ -7,3 +7,7 @@
         Veti primi: 'cmi', 5
         Veti printa: 'cmicmicmicmicmi'
 """
+a = input("Introduceti un cuvant: ")
+x = int(input("Introduceti un numar: "))
+
+print(a*x)
