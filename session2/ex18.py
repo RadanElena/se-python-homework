@@ -7,3 +7,8 @@
         Veti primi: 'Center for Intelligent Machines', 2, 5
         Veti printa: 'nter'
 """
+user = input("Stringul dumneavoastra este: ")
+x = int(input("Introduceti un numar: "))
+y = int(input("Introduceti un numar: "))
+
+print(user[x:y+1:1])
