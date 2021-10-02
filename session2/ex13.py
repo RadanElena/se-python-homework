@@ -6,3 +6,9 @@
         Veti primi: 2 si 3
         Veti printa: 8
 """
+
+x = int(input("Valoarea lui x este: "))
+y = int(input("Valoarea lui y este: "))
+
+print("Valoarea lui x la puterea y este: {}".format(pow(x,y)))
+
