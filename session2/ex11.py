@@ -15,6 +15,6 @@
 user = input()
 user = int(user)
 
-for i in range(user):
-    if i % 2 != 0:
-        print(i)
+for a in range(user):
+    if a % 2 != 0:
+        print(a)
