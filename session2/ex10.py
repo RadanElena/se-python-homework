@@ -21,3 +21,8 @@ d1 = {}
 
 # Afisam listele l1 si l2
 print(l1, l2)
+
+for i in range(len(l1)):
+    d1[l1[i]]=l2[i] 
+    
+print(d1)
