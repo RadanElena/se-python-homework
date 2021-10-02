@@ -6,3 +6,7 @@
         Veti primi: 'cmi'
         Veti printa: 3
 """
+
+x = input("Introduceti un string: ")
+
+print("Stringul introdus are {} litere".format(len(x)))
