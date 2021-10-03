@@ -13,3 +13,4 @@
         False
         False
 """
+print(type(True))
