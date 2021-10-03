@@ -46,5 +46,6 @@ d1 = {}
 for i in range(x):
     d1[l2[i]]=l1[i]
 
+# Am afisat dictionarul
 print(d1)
 
