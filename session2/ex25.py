@@ -11,7 +11,7 @@
 """
 
 # Am afisat conditia pentru care loop-ul se opreste (l-am pus primul doar pentru ca mi se parea ca asa arata mai bine la ouput :D)
-print("Pentru a va opri, tastati 'exit'")
+print("\nPentru a va opri, tastati 'exit'\n")
 
 """ 
     Am creat o variabila 'user' a carui valoare ii este atribuita de la tastatura, si am lasat-o 
@@ -33,10 +33,10 @@ while user != "exit":
     user = input("Introduceti un numar: ")
 
 # Am afisat lista 'l1'
-print(l1)
+print("\nValorile listei sunt {}".format(l1))
 
 # Am creat un set din lista l1
 l2 = set(l1)
 
 # Am afisat valorile setului l2
-print(l2)
+print("\nValorile setului sunt {}".format(l2))
