@@ -13,4 +13,14 @@
         False
         False
 """
-print(type(True))
+
+# Am creat variabila 'user' a carui valori ii sunt atribuite de la tastatura
+user = input("\nIntroduceti un numar: ")
+
+# Am creat un loop ce se va opri numai atunci cand este introdus cuvatul 'exit' de la tastatura
+while user != 'exit':
+    if int(user)%2 == 0:
+        print("\nNumarul introdus este par? {}".format(True))
+    elif int(user)%2 != 0:
+        print("\nNumarul introdus este par? {}".format(False))
+    user = input("\nIntroduceti un numar sau tastati 'exit' pentru a va opri: ")
