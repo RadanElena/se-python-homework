@@ -6,8 +6,20 @@
 
     Functia decorata este f.
 """
+def logIn(func):
+    user = func()
+    def wrapper():
+        f = open("output11.data", "a")
+        f.write(f"Now the user {user} is logged in!")
+        f.close()
+        f = ("output11.data", "r")
+        print(f.read())
+        f.close()
+    return wrapper
 
+        
 
 # decorate me
+@logIn
 def f():
     return "CMI"

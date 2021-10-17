@@ -11,6 +11,7 @@
 
 def dec(func):
     def wrapper():
+        print("cmi")
         func()
 
     return wrapper

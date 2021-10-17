@@ -24,10 +24,13 @@
     Orice e neclar, ma intrebati pe discord la orice ora, fara probleme.
 """
 import random
-
+from collections import Counter 
 
 def add_prefix(pfx, rand_str):
     return pfx + rand_str
+
+def add_suffix(f, sfx):
+    return f + sfx
 
 
 # Nu am spus ca stringul generat aleator trebuie sa contina toate literele
@@ -42,5 +45,15 @@ def generate_random_str(str_length):
 
 prefix = input('Give me an prefix\n')
 x = int(input('Give me a number to generate the random string\n'))
+sufix = input("Give me a suffix: ")
 
+a = 0
+while a<3:
+    for i in prefix:
+        for j in sufix:
+            if i == j:
+                sufix = input("Give me another suffix: ")
+    a += 1
+    
 print(add_prefix(prefix, generate_random_str(x)))
+

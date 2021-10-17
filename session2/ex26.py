@@ -16,11 +16,14 @@
 
 # Am creat variabila 'user' a carui valori ii sunt atribuite de la tastatura
 user = input("\nIntroduceti un numar: ")
-
+l1 = []
 # Am creat un loop ce se va opri numai atunci cand este introdus cuvatul 'exit' de la tastatura
 while user != 'exit':
-    if int(user)%2 == 0:
-        print("\nNumarul introdus este par? {}".format(True))
-    elif int(user)%2 != 0:
-        print("\nNumarul introdus este par? {}".format(False))
+    l1.append(int(user))
     user = input("\nIntroduceti un numar sau tastati 'exit' pentru a va opri: ")
+
+for i in l1:
+    if i % 2 ==0:
+        print(f"Nr. {i} este par? ",True)
+    else:
+        print(f"Nr. {i} este par? ",False)

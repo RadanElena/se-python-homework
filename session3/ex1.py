@@ -4,8 +4,8 @@
 """
 
 
-def power(x, y):
-    return x ** y
+def power(x, y, z = 1):               
+    return x **(y ** z) 
 
 
-print(power(2, 3))
+print(power(2, 3))       
