@@ -19,3 +19,28 @@
         - veti primi input: 'cEVa1'
             ---> ceva1
 """
+
+def upper(my_str):
+    my_str = my_str.upper()
+    return my_str
+
+def lower(my_str):
+    my_str = my_str.lower()
+    return my_str
+
+user = input("Introduce a string: ")
+
+def call_changers(func):
+    def wrapper(my_str):
+        if len(my_str) % 2 == 0:
+            return (upper(my_str))
+        else:
+            return (lower(my_str))
+            
+    return wrapper
+
+@call_changers
+def f(user):
+    return user
+
+print(f(user))

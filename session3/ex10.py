@@ -14,6 +14,12 @@ def dec(func):
         # your code goes here
         func(*args, **kwargs)
 
+        l = []
+        for key in kwargs.keys():
+            l.append(key)
+            
+        print(kwargs[l[1]])
+
     return wrapper
 
 

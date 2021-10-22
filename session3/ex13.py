@@ -4,8 +4,18 @@
     ar fi sa intoarca 'CmI' dupa aplicarea decoratorului.
 
 """
-
+def mod(func):   
+    def wrapper():
+        user = func()
+        l = []
+        for i in user:
+            l.append(i)
+        print(l)
+    return wrapper()
 
 # decoarate me
+@mod
 def f():
     return 'cmi'
+
+

@@ -17,10 +17,10 @@ def func(x):
     while a < x:
         l.append(a)
         a += 1
-
     return l
 
-print(func(3))
+user = int(input("Introduce a number: "))
+print(func(user))
         
 
     
