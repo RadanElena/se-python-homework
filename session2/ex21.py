@@ -34,8 +34,7 @@ l2 = []
 
 # Am creat un 'for' ce introduce stringurile din l1 in l2, dar inainte de a face asta le sterge ultima litera
 for i in l1:
-    l2.append(i[:len(i)-1])
+    l2.append(i[: len(i) - 1])
 
-# Am afisat lista l2 
+# Am afisat lista l2
 print(l2)
-

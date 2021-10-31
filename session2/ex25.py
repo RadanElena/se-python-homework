@@ -29,7 +29,9 @@ l1 = []
 """
 
 while user != "exit":
-    l1.append(int(user))                           # am transformat variabila de tip string in int si am introduso in l1
+    l1.append(
+        int(user)
+    )  # am transformat variabila de tip string in int si am introduso in l1
     user = input("Introduceti un numar: ")
 
 # Am afisat lista 'l1'

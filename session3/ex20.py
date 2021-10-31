@@ -7,14 +7,16 @@
 """
 
 import json
-  
+
+
 def read_from_file(file):
-    with open(f'{file}.json', 'r') as f:
-    
+    with open(f"{file}.json", "r") as f:
+
         json_object = json.load(f)
-    
+
     print(json_object)
     print(type(json_object))
+
 
 name = "output19"
 

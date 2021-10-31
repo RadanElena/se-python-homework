@@ -20,8 +20,8 @@ for i in l1:
     s1.add(i)
 
 # Afisam setul dupa schimbare
-print(s1)  
-   
+print(s1)
+
 """
     Seturile pot contine doar valori unice deci va elimina automat valorile duplicat (ca de exemplu 1, 
     unde se afla in atat in s1 cat si in l1, iar la sfarsit va afisa doar un 1 in loc de 2 de 1).

@@ -18,5 +18,4 @@ def func(param1, param2):
     return param1, param2
 
 
-print(tuple((list(func('cmi1', 'cmi2')))[::-1]))
-
+print(tuple((list(func("cmi1", "cmi2")))[::-1]))

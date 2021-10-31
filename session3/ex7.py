@@ -12,11 +12,13 @@
     Observatii:
         - functia trebuie sa aiba MAXIM 1 linie de cod ca si body
 """
+
+
 def fullName(pfx, word, sfx):
     return pfx + word + sfx
 
 
-prefix= input("Give me an prefix: ")
+prefix = input("Give me an prefix: ")
 word = input("Give me an word: ")
 suffix = input("Give me an suffix: ")
 

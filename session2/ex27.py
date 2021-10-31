@@ -16,10 +16,14 @@ import string
 user = int(input("\nIntroduceti un numar: "))
 
 # Am creat o variabila 'list_strings' in care am importat tot alfabetul (doar cu litere mici)
-list_strings = string.ascii_lowercase             # initial variabila nu este lista si e de forma 'abcdef......z'
+list_strings = (
+    string.ascii_lowercase
+)  # initial variabila nu este lista si e de forma 'abcdef......z'
 
-# Am separat caracterele unele de celelate si am transformat variabila 'list_strings' in lista 
-list_strings = list(map(chr, range(ord('a'), ord('z')+1)))       #functia map itereaza, separand practic characterele unele de celelalte
+# Am separat caracterele unele de celelate si am transformat variabila 'list_strings' in lista
+list_strings = list(
+    map(chr, range(ord("a"), ord("z") + 1))
+)  # functia map itereaza, separand practic characterele unele de celelalte
 
 # Am creat un string 'aleatoriu'
 aleatoriu = ""
@@ -30,7 +34,9 @@ aleatoriu = ""
 """
 
 for i in range(user):
-    aleatoriu = aleatoriu + random.choice(list_strings)          # functia random.choice va selecta aleatoriu charactere din list_strings
+    aleatoriu = aleatoriu + random.choice(
+        list_strings
+    )  # functia random.choice va selecta aleatoriu charactere din list_strings
 
 # Am afisat stringul aleatoriu creat
 print("Stringul aleatoriu creat este: {}".format(aleatoriu))

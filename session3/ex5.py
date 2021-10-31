@@ -11,7 +11,10 @@
         si definitia functiei)
         - hint: list comprehensions (google it if you don't know it already)
 """
-def func(l):
-    return [x+1 for x in l]
 
-print(func([1,2,3]))
+
+def func(l):
+    return [x + 1 for x in l]
+
+
+print(func([1, 2, 3]))

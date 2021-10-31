@@ -19,7 +19,7 @@ def dec(func):
 
 @dec
 def f():
-    print('x')
+    print("x")
 
 
 f()

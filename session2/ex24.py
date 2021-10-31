@@ -16,7 +16,9 @@
 """
 
 # Am creat o variabila 'user' a carui valoare ii este atribuita de la tastatura
-user = input("Introduceti un numar intreg: ")        # am lasat valoarea sa fie de tip string pentru a fi mai usor de inversat
+user = input(
+    "Introduceti un numar intreg: "
+)  # am lasat valoarea sa fie de tip string pentru a fi mai usor de inversat
 
 # Am creat o variabila n1 a carui valoare este valoarea in oglinda a variabilei user (ex: user = '1232' atunci n1 = '2321')
 n1 = user[::-1]

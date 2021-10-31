@@ -11,4 +11,4 @@ user = input("Stringul dumneavoastra este: ")
 x = int(input("Introduceti un numar: "))
 y = int(input("Introduceti un numar: "))
 
-print(user[x:y+1:1])
+print(user[x : y + 1 : 1])

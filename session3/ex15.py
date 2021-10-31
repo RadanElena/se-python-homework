@@ -7,10 +7,12 @@
         - nu aveti voie sa folositi decoratori
 """
 
+
 def f():
     print("cmi")
 
-# Now g is a function too! It does the same thing as f function 
+
+# Now g is a function too! It does the same thing as f function
 g = f
 
 g()

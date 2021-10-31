@@ -18,7 +18,9 @@
 user = input("Introduceti un string: ").lower()
 
 # Am creat un "if" ce verifica daca stringul introdus este palindrom
-if user == user[::-1]:        # user[::-1] intoarce in oglinda cuvantul (de exemplu "gol" devine "log")
+if (
+    user == user[::-1]
+):  # user[::-1] intoarce in oglinda cuvantul (de exemplu "gol" devine "log")
     print(True)
 else:
     print(False)

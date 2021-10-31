@@ -16,7 +16,7 @@ suma = 0
     Am creat un 'for' care va face practic suma numerelor pana la numarul introdus 
     de la tastatura, iar valoarea o va atribui variabilei 'suma'
 """
-for i in range(0, user+1):
+for i in range(0, user + 1):
     suma = suma + i
 
 # Am afisat suma numerelor

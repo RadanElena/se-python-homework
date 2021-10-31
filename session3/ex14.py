@@ -13,13 +13,16 @@
             --> (3 + 5) * 5 + 3 = 43
 """
 
+
 def get_me_numbers(x):
     x = x + 5
 
-    def multiply_by_5(x):  
+    def multiply_by_5(x):
         x = x * 5
         return x
+
     return multiply_by_5(x) + 3
+
 
 user = int(input("Introduce a number: "))
 print(get_me_numbers(user))

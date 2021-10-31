@@ -7,22 +7,26 @@
     Functia decorata este f.
 """
 
-def logIn(func):   
+
+def logIn(func):
     def wrapper():
         user = func()
         f = open("output11.txt", "w")
         f.write(f"Now the user {user} is logged in!")
         f.close()
-        f = open("output11.txt", "r")                 # i opened the file in the read mode for verification
-        print(f.read())           
+        f = open(
+            "output11.txt", "r"
+        )  # i opened the file in the read mode for verification
+        print(f.read())
         f.close()
+
     return wrapper
+
 
 # decorate me
 @logIn
 def f():
     return "CMI"
 
+
 f()
-
-

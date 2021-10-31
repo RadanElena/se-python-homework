@@ -15,7 +15,7 @@ l3 = l1 + l2
 # Pentru a vedea rezultatul, rulati acest script.
 print(l1)
 print(l2)
-print(l3)        # print pentru afisarea celor 2 liste concatenate 
+print(l3)  # print pentru afisarea celor 2 liste concatenate
 
 # Metoda 2
 
@@ -23,4 +23,3 @@ l4 = l1
 for i in l2:
     l4.append(i)
 print(l4)
-

@@ -18,10 +18,14 @@ string = ""
 """
 
 for i in range(len(user)):
-    if i%2 == 0:                                 # literele cu index par din user le-am marit si concatenat in variabila string
-        string = string + user[i].upper()       
+    if (
+        i % 2 == 0
+    ):  # literele cu index par din user le-am marit si concatenat in variabila string
+        string = string + user[i].upper()
     else:
-        string = string + user[i].lower()        # literele cu index impar din user le-am micsorat si concatenat in variabila string
+        string = (
+            string + user[i].lower()
+        )  # literele cu index impar din user le-am micsorat si concatenat in variabila string
 
 # Am afisat variabila string
 print(string)

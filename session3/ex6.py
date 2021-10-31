@@ -9,14 +9,16 @@
 """
 import string
 
+
 def func(s):
-    alphabet_string = string. ascii_lowercase
+    alphabet_string = string.ascii_lowercase
     l = []
     for i in s:
-        l.append(alphabet_string[alphabet_string.index(i)+1])
-    
+        l.append(alphabet_string[alphabet_string.index(i) + 1])
+
     str = "".join(l)
     return str
+
 
 """
     If string contains "z" then the program will get an error because "z" is the last char in the alphabet,

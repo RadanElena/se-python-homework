@@ -7,18 +7,19 @@
             ---> 6
 """
 
-def f(aList):
-   if len(aList) == 1:
-        return aList[0]
-   else:
-        return aList[0] + f(aList[1:])
+
+def f(a_list):
+    if len(a_list) == 1:
+        return a_list[0]
+    else:
+        return a_list[0] + f(a_list[1:])
 
 
 l2 = []
 user = input("Number: ")
 print("\nTo stop type exit\n")
 
-while user != "exit":               
+while user != "exit":
     a = int(user)
     l2.append(a)
     user = input("Number: ")

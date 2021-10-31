@@ -13,5 +13,5 @@ x = int(x)
 # functia range(x) ne va intoarce lista de elemente intregi [0, 1, 2, .., x]
 # Iteram prin toate elementele listei oferite de functia range()
 for i in range(x):
-    if i%2 == 0:
+    if i % 2 == 0:
         print(i)

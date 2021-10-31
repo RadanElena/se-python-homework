@@ -7,4 +7,4 @@
         Veti printa: 'cmicmicmi'
 """
 x = input("Introduceti un cuvant: ")
-print(x*3)
+print(x * 3)

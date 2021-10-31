@@ -19,6 +19,7 @@
 import random
 import json
 
+
 def rand_string(x):
     random_string = ""
     while x:
@@ -26,20 +27,22 @@ def rand_string(x):
         x -= 1
     return random_string
 
+
 def rand_number_list(n):
-    l2 = [0,1,2,3,4,5,6,7,8,9,10]
+    l2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     list_rand_num = []
     while n:
         num = random.choice(l2)
         list_rand_num.append(num)
-        l2.remove(num)              
+        l2.remove(num)
         n -= 1
     return list_rand_num
 
-# The main function 
+
+# The main function
 def json_file(name):
     values_list = []
-    l = [3,4,5,6]
+    l = [3, 4, 5, 6]
     a = 4
     while a != 0:
         num = random.choice(l)
@@ -57,10 +60,8 @@ def json_file(name):
 
     with open(f"{name}.json", "w") as f:
         f.write(json_object)
-  
+
 
 user = "output19"
 
 json_file(user)
-
-

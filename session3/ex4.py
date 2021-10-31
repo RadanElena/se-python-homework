@@ -25,43 +25,47 @@
 """
 
 import random
-from collections import Counter 
+from collections import Counter
+
 
 def add_prefix(pfx, rand_str):
     return pfx + rand_str
 
+
 def add_suffix(f, sfx):
     return f + sfx
 
+
 # Nu am spus ca stringul generat aleator trebuie sa contina toate literele
 def generate_random_str(str_length):
-    rand_str = ''
+    rand_str = ""
     while str_length:
         str_length -= 1
-        rand_str += random.choice(['a', 'x', 'c', 'm', 'i'])
+        rand_str += random.choice(["a", "x", "c", "m", "i"])
     print(f"The generated string is {rand_str}")
     return rand_str
 
-prefix = input('Give me an prefix\n')
-x = int(input('Give me a number to generate the random string\n'))
+
+prefix = input("Give me an prefix\n")
+x = int(input("Give me a number to generate the random string\n"))
 suffix = input("Give me an suffix\n")
 
 a = 0
-while a !=3:  
+while a != 3:
 
     # i made prefix_l and sufix_l and give them the lowercare values of prefix and suffix so the bellow check to not be key sensitive
     prefix_l = prefix.lower()
     suffix_l = suffix.lower()
-    
+
     # common variable makes a list with the common characters between prefix_l, and sufix_l
-    common = list(set([c for c in prefix_l if c in suffix_l])) 
-    
-    if len(common) == 0 :
-        print(add_suffix(add_prefix(prefix,generate_random_str(x)),suffix))
+    common = list(set([c for c in prefix_l if c in suffix_l]))
+
+    if len(common) == 0:
+        print(add_suffix(add_prefix(prefix, generate_random_str(x)), suffix))
         break
     elif len(common) != 0 and a < 2:
         a += 1
-        suffix = input("Give me another suffix\n")       
+        suffix = input("Give me another suffix\n")
     elif len(common) != 0 and a == 2:
         a += 1
-        print(add_prefix(prefix,generate_random_str(x)))
+        print(add_prefix(prefix, generate_random_str(x)))

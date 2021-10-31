@@ -10,4 +10,4 @@
 a = input("Introduceti un cuvant: ")
 x = int(input("Introduceti un numar: "))
 
-print(a*x)
+print(a * x)

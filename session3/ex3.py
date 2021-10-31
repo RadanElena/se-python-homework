@@ -19,8 +19,6 @@ def func(x):
         a += 1
     return l
 
+
 user = int(input("Introduce a number: "))
 print(func(user))
-        
-
-    

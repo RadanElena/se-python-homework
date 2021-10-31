@@ -10,14 +10,14 @@
 
 def dec(func):
     def wrapper(*args, **kwargs):
-        print('cmi')
+        print("cmi")
         # your code goes here
         func(*args, **kwargs)
 
         l = []
         for key in kwargs.keys():
             l.append(key)
-            
+
         print(kwargs[l[1]])
 
     return wrapper

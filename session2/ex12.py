@@ -12,10 +12,10 @@
 user = int(input())
 lista = []
 
-for i in range(1,user):
+for i in range(1, user):
     if user % 2 == 0:
         lista.append(i)
     else:
-        lista.append(i**2)
+        lista.append(i ** 2)
 
 print(lista)

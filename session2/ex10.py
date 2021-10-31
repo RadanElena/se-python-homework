@@ -14,7 +14,7 @@
 
 # In variabila l1 si l2 avem urmtoarele liste:
 l1 = [1, 2, 3, 4]
-l2 = ['a', 'b', 'c', 'd']
+l2 = ["a", "b", "c", "d"]
 
 # In varaibila d1 avem un dictionar gol
 d1 = {}
@@ -23,6 +23,6 @@ d1 = {}
 print(l1, l2)
 
 for i in range(len(l1)):
-    d1[l1[i]]=l2[i] 
-    
+    d1[l1[i]] = l2[i]
+
 print(d1)

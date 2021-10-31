@@ -21,6 +21,7 @@
 """
 import random
 
+
 def append_text_file(func):
     def wrapper(x):
         message = func(x)
@@ -30,7 +31,9 @@ def append_text_file(func):
         f = open("output17.txt", "r")
         print(f.read())
         f.close()
+
     return wrapper
+
 
 @append_text_file
 def f(x):
@@ -39,6 +42,7 @@ def f(x):
         random_string += random.choice(["a", "b", "c", "d", "e", "f", "g", "h"])
         x -= 1
     return random_string
-    
+
+
 user = int(input("Number = "))
-f(user)                 
+f(user)
